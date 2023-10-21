@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   namespace :api do
     post 'boards/create'
     delete 'boards/delete'
+    get 'boards', to: 'boards#index'
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

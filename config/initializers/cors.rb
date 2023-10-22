@@ -11,15 +11,13 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     resource "*",
       headers: :any,
-      methods: :any, #[:get, :post, :put, :patch, :delete, :options, :head]
-      expose: [:Authorization]
+      methods: :any #[:get, :post, :put, :patch, :delete, :options, :head]
   end
 
   allow do
-    origins "https://login-table.vercel.app"
+    origins "https://draw-together-one.vercel.app"
     resource "*",
       headers: :any,
-      methods: :any, #[:get, :post, :put, :patch, :delete, :options, :head]
-      expose: [:Authorization]
+      methods: :any #[:get, :post, :put, :patch, :delete, :options, :head]
   end
 end

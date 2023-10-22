@@ -1,5 +1,4 @@
 class Api::BoardsController < ApplicationController
-  skip_before_action :verify_authenticity_token, :only => [:create, :delete]
 
   def index
     @boards = Board.all

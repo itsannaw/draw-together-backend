@@ -83,3 +83,4 @@ production:
   database: draw_together_backend_production
   username: draw_together_backend
   password: <%= ENV["DRAW_TOGETHER_BACKEND_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
